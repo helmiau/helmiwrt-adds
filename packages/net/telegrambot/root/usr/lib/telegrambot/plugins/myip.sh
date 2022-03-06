@@ -1,9 +1,4 @@
 #!/bin/sh
-# ---------------------------------------------------------------
-#   This script will inform you about your IP Address information
-#   which taken from ip-api.com and show your IP Information
-#   this script is created by helmiau a.k.a Helmi Amirudin
-# ---------------------------------------------------------------
 #--------------------------------------------------------
 #   If you use some codes frome here, please give credit to www.helmiau.com
 #--------------------------------------------------------
