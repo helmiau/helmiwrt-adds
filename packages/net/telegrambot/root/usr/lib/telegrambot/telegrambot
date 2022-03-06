@@ -56,13 +56,17 @@ Try it !
 Send [/start](/start) to get my commands list."
 
 command_start="*/memory* return RAM info
-*/leases* current dhcp leases
-*/wll_list* wifi clients
-*/reboot* reboot the device
-*/wol <mac_address>* wake on lan over the Internet
-*/loc* get current location via modemmanager
-*/wanip* WAN ip address
-*/plugins* aviable commands"
+*/leases* - Current DHCP leases
+*/wll_list* - Lists of WiFi clients
+*/reboot* - Reboot the device
+*/wol <mac_address>* - Wake on lan over the Internet
+*/loc* - Get current location via modemmanager
+*/wanip* - See WAN ip address
+*/myip* - Detailed IP and ISP information
+*/ram* - Device RAM usage
+*/host* - Lists of connected devices 
+------------------------
+*/plugins* - To see other available commands"
 
 curl -k -s -X POST $api/sendMessage \
 	-d chat_id=$chat_id \
