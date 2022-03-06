@@ -9,7 +9,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   PKGARCH:=all
-  DEPENDS:=+curl
+  DEPENDS:=+curl +python3 +python3-pip
   TITLE:=Openwrt Telegram Bot
 endef
 
