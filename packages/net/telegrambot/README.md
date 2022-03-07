@@ -4,13 +4,21 @@ Telegram bot for router with firmware Lede/Openwrt.
 
 ## Implemented functions (Commands via Telegram message)
 
-  - */memory* return RAM info
-  - */clients* connected clients
-  - */wll_list* wifi clients
-  - */wifi_list* wifi info
-  - */reboot* reboot the device
-  - */wol <mac_address>* wake on lan over the Internet
-  - */wanip* WAN ip address
+  - */memory* - Return RAM info
+  - */clients* - Connected clients
+  - */wll_list* - Wifi clients
+  - */wifi_list* - Wifi info
+  - */leases* - Current DHCP leases
+  - */wll_list* - Lists of WiFi clients
+  - */reboot* - Reboot the device
+  - */wol <mac_address>* - Wake on lan over the Internet
+  - */loc* - Get current location via modemmanager
+  - */wanip* - See WAN ip address
+  - */myip* - Detailed IP and ISP information
+  - */ram* - Device RAM usage
+  - */host* - Lists of connected devices 
+  - ------------------------
+  - */plugins* - To see other available commands"
   - */<script_name>* any scripts in the `plugins` directory
 
 ## Prerequisites
