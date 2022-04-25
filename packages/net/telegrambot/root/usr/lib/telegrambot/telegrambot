@@ -59,6 +59,7 @@ command_start="*/memory* return RAM info
 */leases* - Current DHCP leases
 */wll_list* - Lists of WiFi clients
 */reboot* - Reboot the device
+*/turnoff* - Turn off the device
 */wol <mac_address>* - Wake on lan over the Internet
 */loc* - Get current location via modemmanager
 */wanip* - See WAN ip address
@@ -155,7 +156,7 @@ do
 							;;
 						("/reboot")
                                                 	(echo "Call $cmd" | logger -t "telegram_bot" -p daemon.info)&
-	                                                RETURN_TEXT="Command executed!"
+	                                                RETURN_TEXT="Reboot command executed!"
 							reply_to_msg $msg_id $origin "\${RETURN_TEXT}" && sleep 5 && reboot
 							;;
 						("/wol")
